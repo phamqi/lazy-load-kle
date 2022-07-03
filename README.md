@@ -15,12 +15,13 @@ npm install --save lazy-load-kle
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'lazy-load-kle'
+import{ LazyLoad , LazyEarly }from 'lazy-load-kle'
 import 'lazy-load-kle/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <LazyLoad src='link of img' alt='alt' placeholder='link placeholder image' className='add some class for img'/>
+    <LazyLoad src='link of img' alt='alt' placeholder='link placeholder image' className='add some class for img' early={value(default: 200)}/>
   }
 }
 ```
