@@ -12,9 +12,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.root {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  max-width: 1200px;
+}
  .test {
   height: 120vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
